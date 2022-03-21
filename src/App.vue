@@ -10,23 +10,7 @@
     </main>
   </div>
   <TheBodySection>
-    <template #body-header>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi aut id
-        deleniti ea nostrum quam nihil ad possimus porro, fugit itaque,
-        perferendis ullam sint cum.
-      </p>
-    </template>
-  </TheBodySection>
-
-  <TheBodySection>
-    <template #body-header>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente libero
-        excepturi, dicta, deserunt ab ducimus reprehenderit distinctio id ipsa
-        vel aut dolore sed quibusdam minima?
-      </p>
-    </template>
+    <template #body-header></template>
   </TheBodySection>
 
   <TheFooter />
