@@ -1,6 +1,7 @@
-<template>
+<template class="m-0 p-0 box-border">
   <section>
     <TheHeader />
+    <h3>{{ pageNavigation }}</h3>
     <main>
       <p class="text-xl">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae vitae
@@ -24,7 +25,7 @@
   import TheBodySection from "./components/TheBodySection.vue";
   import TheBodyHeader from "./components/TheBodyHeader.vue";
 
-  const pageHeader = "Home Page";
+  const pageNavigation = "Home";
   const pageDescription = "This is the landing page";
 
   // Computed Example using .map

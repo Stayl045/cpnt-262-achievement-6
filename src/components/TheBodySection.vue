@@ -1,8 +1,10 @@
 <template>
-  <section>
+  <section class="flex flex-col rounded-sm py-4">
     <!-- <TheBodyHeader /> -->
     <slot name="body-header" />
-    <h1>This is the body header</h1>
+    <h1 class="grid place-items-center text-center mx-1">
+      This is the body header
+    </h1>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
       asperiores culpa consectetur voluptatibus animi deleniti! Enim impedit est
@@ -12,12 +14,12 @@
 </template>
 
 <script setup>
-  import TheBodyHeader from "./TheBodyHeader";
-  const props = defineProps({
-    title: {
-      type: String,
-    },
-  });
+  // // import TheBodyHeader from "./TheBodyHeader";
+  // const props = defineProps({
+  //   title: {
+  //     type: String,
+  //   },
+  // });
 
   // Vue Conditionals from Class //
   //   const props = defineProps({
