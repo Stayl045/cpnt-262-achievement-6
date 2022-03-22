@@ -10,6 +10,8 @@
       </p>
     </main>
 
+    <ListComponent />
+
     <TheBodySection>
       <template #body-header />
     </TheBodySection>
@@ -22,6 +24,7 @@
   import { computed } from "vue";
   import TheHeader from "./components/TheHeader.vue";
   import TheFooter from "./components/TheFooter.vue";
+  import ListComponent from "./components/ListComponent.vue";
   import TheBodySection from "./components/TheBodySection.vue";
   import TheBodyHeader from "./components/TheBodyHeader.vue";
 
