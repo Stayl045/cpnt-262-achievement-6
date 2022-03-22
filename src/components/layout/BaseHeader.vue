@@ -4,6 +4,9 @@
       {{ props.title }}
     </h2>
     <p>{{ props.description }}</p>
+
+    <!-- Make nav bar component later -->
+    <TheNavBar />
   </header>
 </template>
 

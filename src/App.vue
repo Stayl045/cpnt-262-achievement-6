@@ -1,32 +1,25 @@
-<template class="m-0 p-0 box-border">
+<template>
   <section>
-    <TheHeader />
+    <BaseHeader />
     <h3>{{ pageNavigation }}</h3>
-    <main>
-      <p class="text-xl">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae vitae
-        perferendis laudantium cum, quidem non. At sequi deleniti, nam rem
-        minima numquam beatae iure voluptates.
-      </p>
-    </main>
 
     <ListComponent />
 
-    <TheBodySection>
+    <BaseBodySection>
       <template #body-header />
-    </TheBodySection>
-    <TheFooter />
+    </BaseBodySection>
+    <BaseFooter />
   </section>
 </template>
 
 // imports //
 <script setup>
   import { computed } from "vue";
-  import TheHeader from "./components/TheHeader.vue";
-  import TheFooter from "./components/TheFooter.vue";
+  import BaseHeader from "./components/layout/BaseHeader.vue";
+  import BaseFooter from "./components/layout/BaseFooter.vue";
   import ListComponent from "./components/ListComponent.vue";
-  import TheBodySection from "./components/TheBodySection.vue";
-  import TheBodyHeader from "./components/TheBodyHeader.vue";
+  import BaseBodySection from "./components/layout/BaseBodySection.vue";
+  import TheBodyHeader from "./components/ui/TheBodyHeader.vue";
 
   const pageNavigation = "Home";
   const pageDescription = "This is the landing page";
