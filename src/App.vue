@@ -1,19 +1,19 @@
 <template>
-  <div>
-    <TheHeader :title="pageHeader" :description="pageDescription" />
+  <section>
+    <TheHeader />
     <main>
-      <p>
+      <p class="text-xl">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae vitae
         perferendis laudantium cum, quidem non. At sequi deleniti, nam rem
         minima numquam beatae iure voluptates.
       </p>
     </main>
-  </div>
-  <TheBodySection>
-    <template #body-header></template>
-  </TheBodySection>
 
-  <TheFooter />
+    <TheBodySection>
+      <template #body-header />
+    </TheBodySection>
+    <TheFooter />
+  </section>
 </template>
 
 // imports //
@@ -23,6 +23,7 @@
   import TheFooter from "./components/TheFooter.vue";
   import TheBodySection from "./components/TheBodySection.vue";
   import TheBodyHeader from "./components/TheBodyHeader.vue";
+
   const pageHeader = "Home Page";
   const pageDescription = "This is the landing page";
 
@@ -30,14 +31,3 @@
   // const numberArray = [1, 2, 3, 4, 5];
   // return numberArray.map((num) => num * 5);
 </script>
-
-<style>
-  #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
-  }
-</style>

@@ -1,7 +1,7 @@
 <template>
   <section>
     <!-- <TheBodyHeader /> -->
-    <slot name="body-header"></slot>
+    <slot name="body-header" />
     <h1>This is the body header</h1>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
