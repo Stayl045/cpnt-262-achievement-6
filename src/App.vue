@@ -6,13 +6,13 @@
     <ListComponent />
 
     <BaseBodySection>
-      <template #body-header />
+      <h1>Hello from Slot</h1>
     </BaseBodySection>
     <BaseFooter />
   </section>
 </template>
 
-// imports //
+// imports
 <script setup>
   import { computed } from "vue";
   import BaseHeader from "./components/layout/BaseHeader.vue";
