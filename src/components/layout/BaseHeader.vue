@@ -1,6 +1,6 @@
 <template class="flex flex-col rounded-sm py-4">
   <header class="grid place-items-center text-center mx-1 bg-slate-500">
-    <h2 class="text-black text-3xl md:text-4xl font-medium mb-4 text-2xl">
+    <h2 class="text-black text-3xl md:text-4xl font-medium mb-4">
       {{ props.title }}
     </h2>
     <TheNavBar />
